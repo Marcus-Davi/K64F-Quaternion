@@ -46,7 +46,7 @@ quaternion_t QUAT_Conjugate(const quaternion_t * q){
 
 	return r;
 }
-
+//q*p
 quaternion_t QUAT_Multiply(const quaternion_t * q,const quaternion_t * p){
 	quaternion_t r;
 	r.w = q->w*p->w - VEC_DotProduct(&q->v, &p->v);
